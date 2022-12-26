@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="font-roboto">
-        <header class="flex justify-center p-4 h-20 shadow-md sm:px-8 lg:px-12 backdrop-blur-3xl relative z-[1] bg-black text-white">
+        <header class="flex justify-center p-4 h-20 shadow-md sm:px-8 lg:px-12 relative z-[1] bg-black text-white">
             <div class="flex justify-between w-full items-center max-w-7xl">
                 <div>
                     <img src="./images/Logo.png" alt="foodwars-logo" class="w-40 md:w-52 invert">
@@ -49,103 +49,122 @@
                 <div class="p-4 max-w-4xl text-center flex flex-col gap-4 md:gap-6 text-white">
                     <h2 class="font-bold text-4xl font-viga px-2 md:text-5xl text-white">Welcome to Foodwars Restaurant</h2>
                     <p class="md:text-lg text-gray-200">At FoodWars, our dishes are the real stars of the show. Our menu features an exciting selection of flavors from around the world, all expertly crafted by our talented chefs. But the real draw of FoodWars is the interactive element - customers can vote on their favorite dishes, and the winners are crowned in a thrilling food competition. Whether you're a fan of classic comfort food or adventurous global flavors, FoodWars has something for everyone. So come join us and taste your way to victory at the ultimate food showdown.</p>
-                    <button class="bg-pink-600 text-white font-roboto font-bold w-28 flex justify-center items-center mx-auto px-6 cursor-pointer relative z-10 py-2 rounded-md md:w-36 md:text-xl">Explore</button>
+                    <button class="bg-pink-600 text-white font-roboto font-bold w-28 flex justify-center items-center mx-auto px-6 cursor-pointer relative z-10 py-2 rounded-md md:w-36 md:text-xl transition-colors duration-200 hover:bg-black">Explore</button>
                 </div>
             </section>
-            <section id="menu">
-                <h2>Menu</h2>
-                <h3>Starters</h3>
-                <ul>
-                    <li>
-                        <img src="./images/wings.webp" class="w-40">
-                        <h4>Wings - $10</h4>
-                        <p>Crispy fried chicken wings coated in a spicy sauce</p>
-                    </li>
-                    <li>
-                        <img src="./images/fried-calamari.webp" class="w-40">
-                        <h4>Fried Calamari - $12</h4>
-                        <p>Fried squid rings served with a side of marinara sauce</p>
-                    </li>
-                    <li>
-                        <img src="./images/bruschetta.webp" class="w-40">
-                        <h4>Bruschetta - $8</h4>
-                        <p>Grilled bread topped with diced tomatoes, basil, and mozzarella cheese</p>
-                    </li>
-                </ul>
-                <h3>Entrees</h3>
-                <ul>
-                    <li>
-                        <img src="./images/steak-frites.webp" class="w-40">
-                        <h4>Steak Frites - $20</h4>
-                        <p>Grilled steak served with a side of French fries</p>
-                    </li>
-                    <li>
-                        <img src="./images/spaghetti-carbonara.webp" class="w-40">
-                        <h4>Spaghetti Carbonara - $15</h4>
-                        <p>Spaghetti noodles tossed with bacon, eggs, and Parmesan cheese</p>
-                    </li>
-                    <li>
-                        <img src="./images/tofu-stir-fry.webp" class="w-40">
-                        <h4>Tofu Stir Fry - $18</h4>
-                        <p>Stir-fried tofu and vegetables served over rice</p>
-                    </li>
-                </ul>
-                <h3>Desserts</h3>
-                <ul>
-                    <li>
-                        <img src="./images/cheesecake.webp" class="w-40">
-                        <h4>Cheesecake - $6</h4>
-                        <p>A creamy, classic cheesecake served with a graham cracker crust</p>
-                    </li>
-                    <li>
-                        <img src="./images/chocolate-mousse.webp" class="w-40">
-                        <h4>Chocolate Mousse - $7</h4>
-                        <p>A rich and creamy chocolate dessert made with whipped cream and chocolate</p>
-                    </li>
-                    <li>
-                        <img src="./images/ice-cream-sundae.webp" class="w-40">
-                        <h4>Ice Cream Sundae - $5</h4>
-                        <p>A classic ice cream sundae topped with whipped cream, chocolate sauce, and sprinkles</p>
-                    </li>
-                </ul>
+            <section id="menu" class="flex justify-center">
+                <div class="w-full max-w-sm px-4 py-6 sm:max-w-4xl">
+                    <h2 class="text-4xl font-viga font-bold text-center">Menu</h2>
+                    <div class="my-4">
+                        <h3 class="text-3xl font-pt-sans font-bold my-4">Starters</h3>
+                        <ul class="flex flex-col gap-4 justify-center items-center sm:flex-row flex-wrap">
+                            <li class="border-[1px] border-solid border-black w-full max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/wings.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Wings - $10</h4>
+                                <p class="p-4 text-center">Crispy fried chicken wings coated in a spicy sauce.</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/fried-calamari.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Fried Calamari - $12</h4>
+                                <p class="p-4 text-center">Fried squid rings served with a side of marinara sauce</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/bruschetta.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Bruschetta - $8</h4>
+                                <p class="p-4 text-center">Grilled bread topped with diced tomatoes and cheese</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-pt-sans font-bold my-4">Entrees</h3>
+                        <ul class="flex flex-col gap-4 justify-center items-center sm:flex-row flex-wrap">
+                            <li class="border-[1px] border-solid border-black w-full max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/steak-frites.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Steak Frites - $20</h4>
+                                <p class="p-4 text-center">Grilled steak served with a side of French fries</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/spaghetti-carbonara.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Spaghetti Carbonara - $15</h4>
+                                <p class="p-4 text-center">Spaghetti noodles tossed with bacon and Parmesan cheese</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/tofu-stir-fry.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Tofu Stir Fry - $18</h4>
+                                <p class="p-4 text-center">Stir-fried tofu and vegetables served over rice</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-pt-sans font-bold my-4">Desserts</h3>
+                        <ul class="flex flex-col gap-4 justify-center items-center sm:flex-row flex-wrap">
+                            <li class="border-[1px] border-solid border-black w-full max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/cheesecake.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Cheesecake - $6</h4>
+                                <p class="p-4 text-center">A creamy, classic cheesecake served with a graham cracker crust</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/chocolate-mousse.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Chocolate Mousse - $7</h4>
+                                <p class="p-4 text-center">A rich and creamy chocolate dessert made with whipped cream and chocolate</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                            <li class="border-[1px] border-solid border-black max-w-[16rem] rounded-md shadow-md">
+                                <img src="./images/ice-cream-sundae.webp" class="w-full h-40 object-cover">
+                                <h4 class="bg-black text-white text-center font-pt-sans font-bold text-lg p-3">Ice Cream Sundae - $5</h4>
+                                <p class="p-4 text-center">A classic ice cream sundae topped with whipped cream, chocolate sauce, and sprinkles</p>
+                                <button class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-5 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200">Add To Cart</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-            <section id="reservations">
-                <h2>Reservations</h2>
-                <p>To make a reservation at FoodWars, please fill out the form below or call us at 555-555-5555. We have a variety of tables and seating options available, and we request that all guests adhere to a business casual dress code. We look forward to seeing you at FoodWars!</p>
-                <form>
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required spellcheck="false">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required spellcheck="false">
-                    </div>
-                    <div>
-                        <label for="phone">Phone:</label>
-                        <input type="phone" id="phone" name="phone" required>
-                    </div>
-                    <div>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div>
-                        <label for="time">Time:</label>
-                        <input type="time" id="time" name="time" required>
-                    </div>
-                    <div>
-                        <label for="party">Party Size:</label>
-                        <input type="number" id="party" name="party" required>
-                    </div>
-                    <div>
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+            <section id="reservations" class="flex justify-center">
+                <div class="p-4 w-full max-w-xs sm:max-w-lg md:max-w-4xl">
+                    <h2 class="text-3xl font-viga font-bold text-center md:text-start">Reservations</h2>
+                    <p class="font-gray-900 text-center my-4 md:text-start">To make a reservation at FoodWars, please fill out the form below or call us at 555-555-5555. We have a variety of tables and seating options available, and we request that all guests adhere to a business casual dress code. We look forward to seeing you at FoodWars!</p>
+                    <form class="flex flex-col gap-4 py-4 md:grid grid-cols-2 grid-rows-4">
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required spellcheck="false" class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required spellcheck="false" class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="phone">Phone:</label>
+                            <input type="phone" id="phone" name="phone" placeholder="Your Phone Number" required class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="date">Date:</label>
+                            <input type="date" id="date" name="date" required class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="time">Time:</label>
+                            <input type="time" id="time" name="time" required class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-pt-sans font-bold text-lg after:content-['*'] after:text-red-500" for="party">Party Size:</label>
+                            <input type="number" id="party" name="party" min="1" max="25" placeholder="Maximum 25 Members Allowed" required class="border-[1px] border-black rounded-sm border-solid px-4 py-2 focus:outline-pink-500">
+                        </div>
+                        <div class="py-4 md:col-span-2">
+                            <input type="submit" value="Submit" class="bg-pink-600 text-white font-roboto font-bold flex mx-auto px-8 py-2 mb-4 rounded-md hover:bg-black transition-colors duration-200 md:px-12">
+                        </div>
+                    </form>
+                </div>
             </section>
             <section id="about">
                 <h2>About FoodWars Restaurant</h2>
                 <p>FoodWars Restaurant was founded in 2010 by a group of food enthusiasts who were passionate about bringing people together through the love of great food. From the beginning, our mission has been to create a unique dining experience that combines excellent food with a sense of fun and competition. Our chefs are constantly experimenting with new flavors and techniques to create dishes that are both delicious and innovative. We hope you'll come and join us at FoodWars and be a part of our food-loving community!</p>
-                <img src="./images/interior.webp" alt="Inside view of FoodWars Restaurant" class="w-40">
+                <img src="./images/interior.webp" alt="Inside view of FoodWars Restaurant" class="w-full h-40 object-cover">
               </section>
               <section id="contact">
                 <div>
