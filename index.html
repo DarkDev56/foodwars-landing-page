@@ -161,44 +161,60 @@
                     </form>
                 </div>
             </section>
-            <section id="about">
-                <h2>About FoodWars Restaurant</h2>
-                <p>FoodWars Restaurant was founded in 2010 by a group of food enthusiasts who were passionate about bringing people together through the love of great food. From the beginning, our mission has been to create a unique dining experience that combines excellent food with a sense of fun and competition. Our chefs are constantly experimenting with new flavors and techniques to create dishes that are both delicious and innovative. We hope you'll come and join us at FoodWars and be a part of our food-loving community!</p>
-                <img src="./images/interior.webp" alt="Inside view of FoodWars Restaurant" class="w-full h-40 object-cover">
-              </section>
-              <section id="contact">
-                <div>
-                    <h2>Contact FoodWars Restaurant</h2>
-                    <div>
-                        <p><i class="fa fa-map-marker"></i><span>123 Main Street, Anytown USA</span></p>
-                        <p><i class="fa fa-phone"></i><span>Phone: 555-555-5555</span></p>
-                        <p><i class="fa fa-envelope"></i><span>Email: info@foodwars.com</span></p>
-                        <p><i class="fa fa-camera"></i><span>Follow us on social media:</span></p>
-                        <ul>
-                          <li><i class="fa fa-facebook"></i><a href="#">Facebook</a></li>
-                          <li><i class="fa fa-twitter"></i><a href="#">Twitter</a></li>
-                          <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
-                        </ul>
+            <section id="about" class="h-screen flex flex-col justify-center relative before:content-[''] before:absolute before:z-[-3] before:bg-[url('./images/interior.webp')] before:bg-no-repeat before:bg-cover before:w-full before:h-screen after:content-[''] after:h-screen after:w-full after:bg-black after:opacity-80 after:absolute after:z-[-2] items-center">
+            <div class="p-4 max-w-4xl text-center flex flex-col gap-4 md:gap-6 text-white">
+                <h2 class="font-bold text-4xl font-viga px-2 md:text-5xl text-white">About FoodWars Restaurant</h2>
+                <p class="md:text-lg text-gray-200">FoodWars Restaurant was founded in 2010 by a group of food enthusiasts who were passionate about bringing people together through the love of great food. From the beginning, our mission has been to create a unique dining experience that combines excellent food with a sense of fun and competition. Our chefs are constantly experimenting with new flavors and techniques to create dishes that are both delicious and innovative. We hope you'll come and join us at FoodWars and be a part of our food-loving community!</p>
+            </div>
+            </section>
+            <section id="contact" class="flex flex-col items-center px-4 py-8">
+                <h2 class="text-3xl font-viga font-bold text-center sm:text-start pb-6">Contact FoodWars Restaurant</h2>
+                <div class="flex flex-col md:flex-row-reverse py-4 gap-4 w-full max-w-4xl">
+                    <div class="flex flex-col justify-center items-center md:w-[50%] md:border-2 border-black hover:border-pink-600 border-solid relative md:before:content-[''] md:before:absolute md:before:z-[-3] md:before:bg-[url('./images/contact.webp')] md:before:bg-no-repeat md:before:bg-cover md:before:w-full md:before:h-full md:after:content-[''] md:after:h-full md:after:w-full md:after:bg-black md:after:opacity-80 md:after:absolute md:after:z-[-2] text-black md:text-white">
+                        <div>
+                            <p class="grid grid-cols-[1.75rem,1fr] text-lg">
+                                <i class="fa fa-map-marker m-auto"></i>
+                                <span><strong>123 Main Street, Anytown USA</strong></span>
+                            </p>
+                            <p class="grid grid-cols-[1.75rem,1fr] text-lg">
+                                <i class="fa fa-phone m-auto"></i>
+                                <span><b class="font-pt-sans">Phone:</b> 555-555-5555</span>
+                            </p>
+                            <p class="grid grid-cols-[1.75rem,1fr] text-lg">
+                                <i class="fa fa-envelope m-auto"></i>
+                                <span><b class="font-pt-sans">Email:</b> info@foodwars.com</span>
+                            </p>
+                            <p class="grid grid-cols-[1.75rem,1fr] text-lg">
+                                <i class="fa fa-camera m-auto"></i>
+                                <span><strong class="font-pt-sans">Follow us on social media:</strong></span>
+                            </p>
+                            <ul class="flex gap-2 py-2 justify-end">
+                                <li><i class="fa fa-facebook text-lg border-[1px] rounded-[50%] border-solid border-black md:border-white w-8 h-8 flex justify-center items-center transition-colors duration-200 hover:border-pink-600 hover:text-pink-600 cursor-pointer"></i></li>
+                                <li><i class="fa fa-twitter text-lg border-[1px] rounded-[50%] border-solid border-black md:border-white w-8 h-8 flex justify-center items-center transition-colors duration-200 hover:border-pink-600 hover:text-pink-600 cursor-pointer"></i></li>
+                                <li><i class="fa fa-instagram text-lg border-[1px] rounded-[50%] border-solid border-black md:border-white w-8 h-8 flex justify-center items-center transition-colors duration-200 hover:border-pink-600 hover:text-pink-600 cursor-pointer"></i></li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.959774923221!2d-96.837356!3d32.958427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xceb9a9ec1f9d92c7!2sFoodWars+Restaurant!5e0!3m2!1sen!2sus!4v1533532448672" frameborder="0" style="border:0"></iframe>
+                    <div class="md:w-[50%]">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.959774923221!2d-96.837356!3d32.958427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xceb9a9ec1f9d92c7!2sFoodWars+Restaurant!5e0!3m2!1sen!2sus!4v1533532448672" frameborder="0" class="border-[1px] border-solid border-black w-full h-[50vh]"></iframe>
+                    </div>
                 </div>
             </section>
-            <section id="events">
-                <h2>Special Events at FoodWars Restaurant</h2>
+            <section id="events" class="p-4">
                 <div>
-                    <h3>New Year's Eve Party</h3>
-                    <p>Ring in the new year with us at FoodWars! We'll have live music, a champagne toast at midnight, and a special prix-fixe menu featuring all of your favorite dishes. Tickets are $75 per personand can be purchased by calling 555-555-5555 or by visiting our website. We hope to see you there!</p>
-                </div>
-                <div>
-                    <h3>Live Music Nights</h3>
-                    <p>Join us every Friday and Saturday night for live music at FoodWars! We have a rotating schedule of local musicians who will be performing in our dining room. No cover charge, just come and enjoy the music while you eat. Check out our events calendar to see who's playing this week.</p>
-                </div>
-                <div>
-                    <h3>Holiday Dinners</h3>
-                    <p>Join us for special holiday dinners on Thanksgiving, Christmas, and Easter. We'll be serving up traditional holiday dishes along with some of our signature dishes. Reservations are required for these events, so be sure to book your table early. We can't wait to celebrate with you!</p>
+                    <h2 class="text-3xl font-viga font-bold text-center sm:text-start pb-6">Special Events at FoodWars Restaurant</h2>
+                    <div>
+                        <h3>New Year's Eve Party</h3>
+                        <p>Ring in the new year with us at FoodWars! We'll have live music, a champagne toast at midnight, and a special prix-fixe menu featuring all of your favorite dishes. Tickets are $75 per personand can be purchased by calling 555-555-5555 or by visiting our website. We hope to see you there!</p>
+                    </div>
+                    <div>
+                        <h3>Live Music Nights</h3>
+                        <p>Join us every Friday and Saturday night for live music at FoodWars! We have a rotating schedule of local musicians who will be performing in our dining room. No cover charge, just come and enjoy the music while you eat. Check out our events calendar to see who's playing this week.</p>
+                    </div>
+                    <div>
+                        <h3>Holiday Dinners</h3>
+                        <p>Join us for special holiday dinners on Thanksgiving, Christmas, and Easter. We'll be serving up traditional holiday dishes along with some of our signature dishes. Reservations are required for these events, so be sure to book your table early. We can't wait to celebrate with you!</p>
+                    </div>
                 </div>
               </section>
               <section id="blog">
