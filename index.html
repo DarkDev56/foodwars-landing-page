@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="font-roboto">
-        <header class="flex justify-center p-4 h-20 shadow-md sm:px-8 lg:px-12 backdrop-blur-3xl relative z-[1] bg-white">
+        <header class="flex justify-center p-4 h-20 shadow-md sm:px-8 lg:px-12 backdrop-blur-3xl relative z-[1] bg-black text-white">
             <div class="flex justify-between w-full items-center max-w-7xl">
                 <div>
-                    <img src="./images/Logo.png" alt="foodwars-logo" class="w-40 md:w-52">
+                    <img src="./images/Logo.png" alt="foodwars-logo" class="w-40 md:w-52 invert">
                 </div>
                 <nav class="hidden md:flex w-full justify-end" id="nav-desktop">
                     <ul class="flex flex-row gap-6 lg:gap-10 font-bold font-pt-sans lg:text-lg">
@@ -29,7 +29,7 @@
                     </ul>
                 </nav>
                 <div class="relative">
-                    <nav id="nav-mobile" class="transition-transform duration-300 scale-0 origin-top-right bg-white absolute z-40 right-0 top-20 md:hidden">
+                    <nav id="nav-mobile" class="transition-transform duration-300 scale-0 origin-top-right bg-black text-white absolute z-40 right-0 top-20 md:hidden">
                         <ul class="flex flex-col gap-4 w-40 p-6 relative z-40 font-pt-sans font-bold">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#menu">Menu</a></li>
@@ -45,10 +45,10 @@
             </div>
         </header>
         <main>
-            <section id="home" class="h-[calc(100vh-5rem)] flex flex-col justify-center relative before:content-[''] before:absolute before:z-[-3] before:bg-[url('./images/hero-desktop.webp')] before:bg-no-repeat before:bg-cover before:w-full before:h-screen before:top-[-5rem] after:content-[''] after:h-screen after:top-[-5rem] after:w-full after:bg-white after:opacity-80 after:absolute after:z-[-2] items-center">
-                <div class="p-4 max-w-4xl text-center flex flex-col gap-4 md:gap-6">
-                    <h2 class="font-bold text-4xl font-viga px-2 md:text-5xl">Welcome to Foodwars Restaurant</h2>
-                    <p class="md:text-lg">At FoodWars, our dishes are the real stars of the show. Our menu features an exciting selection of flavors from around the world, all expertly crafted by our talented chefs. But the real draw of FoodWars is the interactive element - customers can vote on their favorite dishes, and the winners are crowned in a thrilling food competition. Whether you're a fan of classic comfort food or adventurous global flavors, FoodWars has something for everyone. So come join us and taste your way to victory at the ultimate food showdown.</p>
+            <section id="home" class="h-[calc(100vh-5rem)] flex flex-col justify-center relative before:content-[''] before:absolute before:z-[-3] before:bg-[url('./images/hero-desktop.webp')] before:bg-no-repeat before:bg-cover before:w-full before:h-screen before:top-[-5rem] after:content-[''] after:h-screen after:top-[-5rem] after:w-full after:bg-black after:opacity-80 after:absolute after:z-[-2] items-center">
+                <div class="p-4 max-w-4xl text-center flex flex-col gap-4 md:gap-6 text-white">
+                    <h2 class="font-bold text-4xl font-viga px-2 md:text-5xl text-white">Welcome to Foodwars Restaurant</h2>
+                    <p class="md:text-lg text-gray-200">At FoodWars, our dishes are the real stars of the show. Our menu features an exciting selection of flavors from around the world, all expertly crafted by our talented chefs. But the real draw of FoodWars is the interactive element - customers can vote on their favorite dishes, and the winners are crowned in a thrilling food competition. Whether you're a fan of classic comfort food or adventurous global flavors, FoodWars has something for everyone. So come join us and taste your way to victory at the ultimate food showdown.</p>
                     <button class="bg-pink-600 text-white font-roboto font-bold w-28 flex justify-center items-center mx-auto px-6 cursor-pointer relative z-10 py-2 rounded-md md:w-36 md:text-xl">Explore</button>
                 </div>
             </section>

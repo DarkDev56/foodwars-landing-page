@@ -6,6 +6,6 @@
 {
     .nav-link
     {
-        @apply before:transition-all before:duration-200 before:content-[''] relative before:absolute before:bottom-[-3px] before:w-0 before:h-1 before:bg-pink-600 hover:before:w-full;
+        @apply before:transition-all before:duration-200 before:content-[''] relative before:absolute before:bottom-[-4px] before:w-0 before:h-1 before:bg-pink-600 hover:before:w-full;
     }
 }
